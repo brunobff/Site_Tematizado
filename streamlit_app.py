@@ -30,10 +30,24 @@ arquivo = 'https://raw.githubusercontent.com/BFFgit/Sistema_Avaliacao_Criticas/m
 
 data = load_data()
 
-st.markdown("<h1 style='text-align: center; color: green;'>Análise de Sentimento de Críticas de Produtos</h1>", unsafe_allow_html=True)
+st.markdown(
+    """
+    <style>
+        [data-testid="stSidebarNav"] {
+            background-image: url(https://github.com/BFFgit/Sistema_Avaliacao_Criticas/blob/main/pngimg.com%20-%20amazon_PNG11.png);
+            background-repeat: no-repeat;
+            padding-top: 120px;
+            background-position: 20px 20px;
+        }
+    </style>
+    """,
+    unsafe_allow_html=True,
+    )
 
-st.header("Dataset de Críticas da Amazon")
+st.markdown("<h1 style='text-align: center; color: blue;'>Análise de Sentimento de Críticas de Produtos</h1>", unsafe_allow_html=True)
+
 st.write(data)
+st.caption('Dataset de Críticas da Amazon')
 
 nltk.download('punkt')  
 nltk.download('stopwords')
