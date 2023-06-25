@@ -31,6 +31,7 @@ arquivo = 'https://raw.githubusercontent.com/BFFgit/Sistema_Avaliacao_Criticas/m
 data = load_data()
 
 st.sidebar.image("https://raw.githubusercontent.com/BFFgit/Sistema_Avaliacao_Criticas/main/Amazon_logo.svg", use_column_width=True)
+st.sidebar.info("Feito Por: Bruno Felipe")
 
 st.markdown("<h1 style='text-align: center; color: orange;'>Análise de Sentimento de Críticas de Produtos</h1>", unsafe_allow_html=True)
 
