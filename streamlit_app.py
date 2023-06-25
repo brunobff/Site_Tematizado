@@ -30,8 +30,28 @@ arquivo = 'https://raw.githubusercontent.com/BFFgit/Sistema_Avaliacao_Criticas/m
 
 data = load_data()
 
-my_logo = 'https://raw.githubusercontent.com/BFFgit/Sistema_Avaliacao_Criticas/main/Amazon_logo.svg'
-st.sidebar.image(my_logo)
+def add_logo():
+    st.markdown(
+        """
+        <style>
+            [data-testid="stSidebarNav"] {
+                background-image: url(https://raw.githubusercontent.com/BFFgit/Sistema_Avaliacao_Criticas/main/Amazon_logo.svg);
+                background-repeat: no-repeat;
+                padding-top: 120px;
+                background-position: 20px 20px;
+            }
+            [data-testid="stSidebarNav"]::before {
+                content: "My Company Name";
+                margin-left: 20px;
+                margin-top: 20px;
+                font-size: 30px;
+                position: relative;
+                top: 100px;
+            }
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
 
 st.markdown("<h1 style='text-align: center; color: blue;'>Análise de Sentimento de Críticas de Produtos</h1>", unsafe_allow_html=True)
 
