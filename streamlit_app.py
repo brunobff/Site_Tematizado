@@ -30,7 +30,7 @@ arquivo = 'https://raw.githubusercontent.com/BFFgit/Sistema_Avaliacao_Criticas/m
 
 data = load_data()
 
-my_logo = add_logo(logo_path="https://raw.githubusercontent.com/BFFgit/Sistema_Avaliacao_Criticas/main/Amazon_logo.svg", width=50, height=60)
+my_logo = 'https://raw.githubusercontent.com/BFFgit/Sistema_Avaliacao_Criticas/main/Amazon_logo.svg'
 st.sidebar.image(my_logo)
 
 st.markdown("<h1 style='text-align: center; color: blue;'>Análise de Sentimento de Críticas de Produtos</h1>", unsafe_allow_html=True)
