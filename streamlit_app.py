@@ -30,12 +30,6 @@ arquivo = 'https://raw.githubusercontent.com/BFFgit/Sistema_Avaliacao_Criticas/m
 
 data = load_data()
 
-def add_logo(logo_path, width, height):
-    """Read and return a resized logo"""
-    logo = logo_path
-    modified_logo = logo.resize((width, height))
-    return modified_logo
-
 my_logo = add_logo(logo_path="https://raw.githubusercontent.com/BFFgit/Sistema_Avaliacao_Criticas/main/Amazon_logo.svg", width=50, height=60)
 st.sidebar.image(my_logo)
 
