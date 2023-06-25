@@ -30,7 +30,7 @@ arquivo = 'https://raw.githubusercontent.com/BFFgit/Sistema_Avaliacao_Criticas/m
 
 data = load_data()
 
-st.title("Análise de Sentimento de Críticas de Produtos")
+st.markdown("<h1 style='text-align: center; color: red;'>Análise de Sentimento de Críticas de Produtos</h1>", unsafe_allow_html=True)
 
 st.header("Dataset de Críticas da Amazon")
 st.write(data)
