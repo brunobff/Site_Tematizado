@@ -36,7 +36,7 @@ def add_logo(logo_path, width, height):
     modified_logo = logo.resize((width, height))
     return modified_logo
 
-my_logo = add_logo(logo_path="https://github.com/BFFgit/Sistema_Avaliacao_Criticas/blob/main/pngimg.com%20-%20amazon_PNG11.png", width=50, height=60)
+my_logo = add_logo(logo_path="https://raw.githubusercontent.com/BFFgit/Sistema_Avaliacao_Criticas/main/Amazon_logo.svg", width=50, height=60)
 st.sidebar.image(my_logo)
 
 st.markdown("<h1 style='text-align: center; color: blue;'>Análise de Sentimento de Críticas de Produtos</h1>", unsafe_allow_html=True)
