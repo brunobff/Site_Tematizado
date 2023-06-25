@@ -52,6 +52,7 @@ def add_logo():
         """,
         unsafe_allow_html=True,
     )
+    return add_logo
 
 st.markdown("<h1 style='text-align: center; color: blue;'>Análise de Sentimento de Críticas de Produtos</h1>", unsafe_allow_html=True)
 
